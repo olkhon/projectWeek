@@ -1,0 +1,9 @@
+/* grid 2 for section alex */
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
