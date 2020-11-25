@@ -6,14 +6,28 @@
 
 .column {
     flex: 50%;
-    max-height: 300px;
 }
 
-.form {
+.form,
+.footerInfo {
     margin-left: 15%;
     margin-right: 15%;
 }
 
 .imgTestimonials {
     display: flex;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+.footerInfo {
+    display: flex;
+}
+
+.grid3 {
+    flex: 33, 3%;
+    width: 100%;
 }
