@@ -6,4 +6,14 @@
 
 .column {
     flex: 50%;
+    max-height: 300px;
+}
+
+.form {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.imgTestimonials {
+    display: flex;
 }
