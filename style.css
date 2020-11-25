@@ -7,3 +7,81 @@
 .column {
     flex: 50%;
 }
+
+/* section 1 */
+
+html {
+    font-size: 15px;
+}
+
+.banner {
+    background-image: url(./images/design-assets/bgk-header.png);
+    background-size: 100% auto;
+    background-position: cover;
+    height: 32rem;
+    background-repeat: no-repeat;
+}
+
+.center-items {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    color: white;
+    height: 2rem;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.logo-name img {
+    margin-right: 0.75rem;
+}
+
+.middle-text {
+    width: 70%;
+}
+
+.items-menu {
+    list-style: none;
+}
+
+.items-menu li {
+    margin-right: 1rem;
+}
+
+.banner-text-box {
+    height: 28rem;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    min-width: 600px;
+}
+
+.inner-banner-text-box {
+    text-align: center;
+    color: white;
+}
+
+.line {
+    width: 200px;
+    border-top: 2px solid #48DED0;
+    margin: auto;
+}
+
+.button {
+    text-decoration: none;
+    border: 2px solid #48DED0;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2px;
+    color: #48DED0;
+}
