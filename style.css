@@ -18,7 +18,7 @@ html {
     background-image: url(./images/design-assets/bgk-header.png);
     background-size: 100% auto;
     background-position: cover;
-    height: 32rem;
+    height: 35rem;
     background-repeat: no-repeat;
 }
 
@@ -55,8 +55,14 @@ nav {
     list-style: none;
 }
 
-.items-menu li {
+.items-menu a {
+    color: white;
+    text-decoration: none;
     margin-right: 1rem;
+}
+.items-menu a:hover {
+    color: rgba(230, 230, 230, 0.3);
+    trasition: 0.5;
 }
 
 .banner-text-box {
@@ -72,6 +78,13 @@ nav {
     color: white;
 }
 
+.inner-banner-text-box h1 {
+    font-size: 2rem;
+}
+.inner-banner-text-box p {
+    line-height: 1.5rem;
+}
+
 .line {
     width: 200px;
     border-top: 2px solid #48DED0;
@@ -80,8 +93,58 @@ nav {
 
 .button {
     text-decoration: none;
-    border: 2px solid #48DED0;
+    border: 3px solid #48DED0;
     padding: 0.5rem 1.2rem;
     border-radius: 2px;
     color: #48DED0;
+}
+
+.button:hover {
+    border: 3px solid #2D8D84;
+    color: #2D8D84;
+    transition: 0.5;
+}
+
+.section2 {
+    width: 100%;
+    height: 400px;
+}
+
+.our-story-div {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.text-box-our-story p {
+    line-height: 1.5rem;
+}
+
+.text-box-our-story {
+    width: 40%;
+    padding-left: 3rem;
+}
+
+.middle-section {
+    background-image: url(./images/design-assets/bgk-middle.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 28rem;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button img {
+    margin: auto;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-button h4 {
+    text-align: center;
 }
