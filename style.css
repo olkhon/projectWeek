@@ -1,14 +1,3 @@
-/* grid 2 for section alex */
-
-.row {
-    display: flex;
-}
-
-.column {
-    flex: 50%;
-}
-
-
 /* section 1 */
 
 html {
@@ -61,9 +50,10 @@ nav {
     text-decoration: none;
     margin-right: 1rem;
 }
+
 .items-menu a:hover {
     color: rgba(230, 230, 230, 0.3);
-    trasition: 0.5;
+    transition: 0.5;
 }
 
 .banner-text-box {
@@ -82,6 +72,7 @@ nav {
 .inner-banner-text-box h1 {
     font-size: 2rem;
 }
+
 .inner-banner-text-box p {
     line-height: 1.5rem;
 }
@@ -148,11 +139,46 @@ nav {
 
 .play-button h4 {
     text-align: center;
+}
 
-.form,
-.footerInfo {
+
+/* Section 3 */
+
+
+/* grid 2 for section alex */
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.column img {
+    padding: 15px;
+}
+
+.column form {
+    text-align: center;
+}
+
+.imgTestimonials,
+.column h4 {
+    text-align: center;
+}
+
+.form {
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+input,
+textarea {
+    width: 80%;
+    padding: 10px;
 }
 
 .imgTestimonials {
@@ -181,4 +207,65 @@ img {
     background-size: cover;
     width: 100%;
     height: 200px;
+}
+
+
+/* footer */
+
+footer {
+    background-image: url(./images/design-assets/bgk-footer.png);
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-container-3-columns {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
+    padding: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.grid-container-3-columns>div {
+    padding: 20px 0;
+    color: white;
+}
+
+.grid-container-2-columns {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container-2-columns>div {
+    color: white;
+    margin: 0;
+}
+
+.grid-container-2-columns-phone {
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+#newsletter {
+    width: 50%
+}
+
+#paper-pic {
+    background-color: white;
+}
+
+#newsletter-row,
+#socialmedia-row {
+    display: flex;
+    flex-direction: row;
 }
