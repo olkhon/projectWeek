@@ -6,4 +6,279 @@
 
 .column {
     flex: 50%;
+} 
+.mockup {
+    display: none;
+    width: 100vw;
+    height: auto;
 }
+ 
+
+
+/* stefano Section */
+
+/*  font-family not considered */ 
+
+
+:root { 
+  --bg-color-white: white;	
+  --color-grey: grey; 
+  --color-black: #413d4b; 
+  --border-color-grey: #8080805e;
+  --font-family-text:  'playfair_displayregular';
+  --font-family-headline:  'playfair_displaybold';
+  --font-family-roboto: 'robotoblack';
+
+    
+}
+
+
+#stefan {
+	width: 100%; 
+}
+
+#stefan .wrapper {
+
+background-color: var(--bg-color-white);
+
+padding: 60px 0 90px; 
+
+overflow: hidden;
+}
+
+
+#stefan .expertise {
+	max-width: 900px; 
+    text-align: center;
+    margin: 0 auto; 
+}
+
+
+#stefan .headline {margin: 0 0 3rem;}
+
+#stefan .headline h3 {
+
+text-transform: uppercase;
+
+font-family: var(--font-family-headline);
+
+margin: 0;
+
+color: #413d4b;
+
+font-family: var(--font-family-text);
+
+font-weight: 600;
+
+font-size: x-large;
+}
+
+
+#stefan .hr {
+     margin-bottom: 1em;
+     height: 2px;
+     width: 62px;
+     margin:  16px auto;
+     background: var(--border-color-grey);
+}
+
+
+
+
+
+ 
+
+#stefan   .headline   {
+
+margin: 10px 0 0 0;
+color: var(--color-grey);
+
+
+}
+
+#stefan .features {
+	
+display: flex;
+	
+margin: 0 auto;
+	
+max-width: 1000px;
+	
+flex-wrap: wrap;
+	
+justify-content: center;
+	
+text-align: center;
+	
+padding: 1px 0 0 1px;
+}
+
+
+@media only screen and (max-width: 588px) {   
+	#stefan .features {
+		flex-direction: column;
+	} 
+
+	#stefan .features {
+		margin-bottom: 4rem;
+		max-width:62vw;
+	} 
+	
+	#stefan .features  .feature {
+		border: transparent !important;
+	} 
+} 
+
+
+#stefan .features .feature {
+	
+flex-basis: 33%;
+	 
+	
+padding: 30px 12px 12px 12px;
+	
+border-right: 1px solid  var(--border-color-grey);
+	
+border-bottom: 1px solid var(--border-color-grey);
+	
+box-sizing: border-box;
+}
+
+
+/*  inner Borders only START */
+#stefan > .wrapper:nth-child(1) .features > .feature:nth-child(3),
+#stefan > .wrapper:nth-child(1) .features > .feature:nth-child(6) {  
+    border-right: none; 
+}  
+#stefan > .wrapper:nth-child(1) .features > .feature:nth-child(4),
+#stefan > .wrapper:nth-child(1) .features > .feature:nth-child(5),
+#stefan > .wrapper:nth-child(1) .features > .feature:nth-child(6) {  
+    border-bottom: none; 
+}  
+
+
+
+#stefan .features .feature img {
+	
+margin-bottom: 25px;
+}
+
+
+#stefan .features .feature h4 {
+	
+font-size: .91rem;
+	
+font-weight: 600;
+	
+text-transform: uppercase;
+	
+margin: 0 0 12px;
+	
+font-family: var(--font-family-roboto);
+}
+
+#stefan .features .feature p {
+	
+color: var(--color-grey);
+	
+line-height: 1.25;
+	
+font-size: .9rem;
+	
+margin: 0 8px;
+}
+ 
+#stefan .team {
+
+background-image: url('images/design-assets/bgk-middle.png');
+
+background-repeat: no-repeat;
+
+background-size: cover;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+}
+
+
+@media only screen and (max-width: 588px) {   
+	#stefan .team {
+		flex-direction: column;
+	} 
+	#stefan .teammember {
+		margin-bottom: 4rem;
+		max-width:80vw;
+	} 
+} 
+
+
+#stefan .white  { 
+ 
+color: var(--bg-color-white) !important;
+}
+
+#stefan .hr.white {
+    background: var(--bg-color-white);
+}
+
+
+#stefan .team .teammember {
+ 
+margin-right: 20px;
+ 
+border: .01em solid var(--color-grey);
+ }
+
+ 
+#stefan .team .teammember img {
+ 
+ }
+
+ 
+#stefan .team .teammember .teammember-details {
+ 
+text-transform: uppercase;
+}
+
+ 
+#stefan .team .teammember .teammember-details h3 {
+ 
+line-height: 2rem;
+ 
+margin-bottom: -15px;
+}
+
+#stefan .team .teammember .teammember-details p {
+ 
+margin: 17px 0px 35px;
+ 
+font-size: .79rem;
+ }
+
+ 
+ 
+ 
+#stefan .cta {margin-top: 6rem;}
+
+#stefan .cta .pleaseApply {margin-bottom: .3rem;font-size: 1.12rem;}
+
+#stefan .callToAction {
+	    padding: 4px 10px;
+	    margin: 14px 20px;
+	    text-transform: uppercase;
+	    display: inline-block;
+	    color: #1fd8cb;
+	    border: 1px solid #1fd8cb;
+	    font-size: 1.2rem;
+	    cursor: pointer;
+	    border-radius: 3px;
+	    letter-spacing: 1px;
+	    line-height: 1.5;
+	    text-decoration: none;
+	    font-weight: 600;
+}
+
+ 
