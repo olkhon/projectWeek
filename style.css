@@ -353,7 +353,7 @@ nav {
     display: flex;
 }
 
-img {
+#jasmin img {
     max-width: 100px;
     height: auto;
 }
