@@ -59,12 +59,16 @@
     font-size: x-large;
 }
 
+#stefan .headline p { 
+    margin: .5em 1em;
+} 
+
 #stefan .hr {
-    margin-bottom: 1em;
     height: 2px;
     width: 62px;
     margin: 16px auto;
     background: var(--border-color-grey);
+    margin-bottom: 3em;
 }
 
 #stefan .features {
@@ -79,7 +83,7 @@
 
 #stefan .features .feature {
     flex-basis: 33%;
-    padding: 30px 12px 12px 12px;
+    padding: 30px 12px 30px 12px;
     border-right: 1px solid var(--border-color-grey);
     border-bottom: 1px solid var(--border-color-grey);
     box-sizing: border-box;
@@ -101,7 +105,7 @@
 
 
 #stefan .features .feature img {
-    margin-bottom: 25px;
+    margin-bottom: 14px;
 }
 
 #stefan .features .feature h4 {
@@ -114,7 +118,7 @@
 
 #stefan .features .feature p {
     color: var(--color-grey);
-    line-height: 1.25;
+    line-height: 1.7;
     font-size: .9rem;
     margin: 0 8px;
 }
@@ -145,7 +149,8 @@
 
 #stefan .team .teammember .teammember-details p {
     margin: 17px 0px 35px;
-    font-size: .79rem;
+    font-size: .79rem; 
+    color: var(--color-grey);
 }
 
 
@@ -156,7 +161,7 @@
 
 #stefan .cta .pleaseApply {
     margin-bottom: .3rem;
-    font-size: 1.12rem;
+    font-size: 0.85rem;
 }
 
 #stefan .callToAction {
