@@ -320,7 +320,7 @@ nav {
     padding: 0.5rem 1.2rem;
     border-radius: 2px;
     color: #48DED0; 
-    background-color: unset;
+    background-color: unset; 
 }
 
 .button:hover {
