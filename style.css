@@ -1,4 +1,4 @@
- 
+
 /* grid 2 for section alex */
 
 .row {
@@ -175,7 +175,11 @@
     font-weight: 600;
 }
 
-
+#stefan .callToAction .fas { 
+    margin-right: 1em; 
+    animation: fa-spin 2s linear infinite;
+}
+  
 #stefan .white {
     color: var(--bg-color-white) !important;
 }
