@@ -1,7 +1,228 @@
+ 
+/* grid 2 for section alex */
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+
+
+
+/* stefano Section starts here */
+/*  font-family's are not yet implemented im html-file */
+:root {
+    --bg-color-white: white;
+    --color-grey: grey;
+    --color-black: #413d4b;
+    --border-color-grey: #8080805e;
+    --font-family-text: 'playfair_displayregular';
+    --font-family-headline: 'playfair_displaybold';
+    --font-family-roboto: 'robotoblack';
+}
+
+#stefan {
+    width: 100%;
+}
+
+#stefan .wrapper {
+    background-color: var(--bg-color-white);
+    padding: 60px 0 90px;
+    overflow: hidden;
+}
+
+#stefan .expertise {
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#stefan .headline {
+    margin: 0 0 3rem;
+    margin: 10px 0 0 0;
+    color: var(--color-grey);
+}
+
+#stefan .headline h3 {
+    text-transform: uppercase;
+    font-family: var(--font-family-headline);
+    margin: 0;
+    color: #413d4b;
+    font-family: var(--font-family-text);
+    font-weight: 600;
+    font-size: x-large;
+}
+
+#stefan .hr {
+    margin-bottom: 1em;
+    height: 2px;
+    width: 62px;
+    margin: 16px auto;
+    background: var(--border-color-grey);
+}
+
+#stefan .features {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 1px 0 0 1px;
+}
+
+#stefan .features .feature {
+    flex-basis: 33%;
+    padding: 30px 12px 12px 12px;
+    border-right: 1px solid var(--border-color-grey);
+    border-bottom: 1px solid var(--border-color-grey);
+    box-sizing: border-box;
+}
+
+/* START NO OUTER BORDERS -- > only  inner! Borders   - I am aware this solution is far from ideal ;) */
+#stefan>.wrapper:nth-child(1) .features>.feature:nth-child(3),
+#stefan>.wrapper:nth-child(1) .features>.feature:nth-child(6) {
+    border-right: none;
+}
+
+#stefan>.wrapper:nth-child(1) .features>.feature:nth-child(4),
+#stefan>.wrapper:nth-child(1) .features>.feature:nth-child(5),
+#stefan>.wrapper:nth-child(1) .features>.feature:nth-child(6) {
+    border-bottom: none;
+}
+
+/* END  NO OUTER BORDERS -- > only  inner! Borders    - I am aware this solution is far from ideal ;) */
+
+
+#stefan .features .feature img {
+    margin-bottom: 25px;
+}
+
+#stefan .features .feature h4 {
+    font-size: .91rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+    font-family: var(--font-family-roboto);
+}
+
+#stefan .features .feature p {
+    color: var(--color-grey);
+    line-height: 1.25;
+    font-size: .9rem;
+    margin: 0 8px;
+}
+
+#stefan .team {
+    background-image: url('images/design-assets/bgk-middle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 0% 50%;
+}
+
+#stefan .team .teammember {
+    margin-right: 20px;
+    border: .01em solid var(--color-grey);
+}
+
+#stefan .team .teammember img {}
+
+
+#stefan .team .teammember .teammember-details {
+    text-transform: uppercase;
+}
+
+#stefan .team .teammember .teammember-details h3 {
+    line-height: 2rem;
+    margin-bottom: -15px;
+}
+
+#stefan .team .teammember .teammember-details p {
+    margin: 17px 0px 35px;
+    font-size: .79rem;
+}
+
+
+#stefan .cta {
+    margin-top: 6rem;
+    padding-bottom: 4em;
+}
+
+#stefan .cta .pleaseApply {
+    margin-bottom: .3rem;
+    font-size: 1.12rem;
+}
+
+#stefan .callToAction {
+    margin: 14px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+
+#stefan .white {
+    color: var(--bg-color-white) !important;
+}
+
+#stefan .hr.white {
+    background: var(--bg-color-white);
+}
+
+
+@media only screen and (max-width: 888px) {
+
+    #stefan .features,
+    #stefan .team {
+        flex-direction: column;
+    }
+
+    #stefan .features {
+        margin-bottom: 4rem;
+        max-width: 62vw;
+    }
+
+    #stefan .teammember {
+        margin-bottom: 4rem;
+        max-width: 80vw;
+    }
+
+    #stefan .features .feature {
+        border: transparent !important;
+    }
+
+    #stefan .white {
+        padding: 0 1em;
+    }
+
+    #stefan {
+        padding: 40rem 0 0 0;
+    }
+
+    #stefan .headline h3 {
+        margin-top: 2em;
+    }
+
+}
+
+
+/* stefano Section ends here */
+
+ 
 /* section 1 */
 
 html {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .banner {
@@ -140,6 +361,7 @@ nav {
 .play-button h4 {
     text-align: center;
 }
+ 
 
 
 /* Section 3 */
@@ -168,7 +390,7 @@ nav {
     text-align: center;
 }
 
-.form {
+.form { 
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 5%;
@@ -185,7 +407,7 @@ textarea {
     display: flex;
 }
 
-img {
+#alex img {
     max-width: 100px;
     height: auto;
 }
@@ -206,7 +428,7 @@ img {
     background-image: url("images\design-assets\bgk-footer.png");
     background-size: cover;
     width: 100%;
-    height: 200px;
+    height: 200px; 
 }
 
 
@@ -267,5 +489,5 @@ footer {
 #newsletter-row,
 #socialmedia-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
 }
