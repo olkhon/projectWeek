@@ -1,503 +1,489 @@
-
 /* grid 2 for section alex */
 
 .row {
-    display: flex;
+  display: flex;
 }
 
 .column {
-    flex: 50%;
+  flex: 50%;
 }
-
-
-
-
-
 
 /* stefano Section starts here */
 /*  autoprefixer  for vendor prefix still missing  */
 
 :root {
-    --bg-color-white: white;
-    --color-grey: grey;
-    --color-black: #413d4b;
-    --border-color-grey: #8080805e;
-    --font-family-text: 'Playfair Display';
-    --font-family-headline: 'Playfair Display';
-    --font-family-roboto: 'Roboto';
+  --bg-color-white: white;
+  --color-grey: grey;
+  --color-black: #413d4b;
+  --border-color-grey: #8080805e;
+  --font-family-text: "Playfair Display";
+  --font-family-headline: "Playfair Display";
+  --font-family-roboto: "Roboto";
 }
 
-
 #stefan {
-    width: 100%;
+  width: 100%;
 }
 
 #stefan .wrapper {
-    background-color: var(--bg-color-white);
-    padding: 60px 0 90px;
-    overflow: hidden;
+  background-color: var(--bg-color-white);
+  padding: 60px 0 90px;
+  overflow: hidden;
 }
 
 #stefan .expertise {
-    max-width: 900px;
-    text-align: center;
-    margin: 0 auto;
-    font-family: var(--font-family-text);
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: var(--font-family-text);
 }
 
 #stefan .headline {
-    margin: 0 0 3rem;
-    margin: 10px 0 0 0;
-    color: var(--color-grey);
+  margin: 0 0 3rem;
+  margin: 10px 0 0 0;
+  color: var(--color-grey);
 }
 
 #stefan .headline h3 {
-    text-transform: uppercase;
-    font-family: var(--font-family-headline);
-    margin: 0;
-    color: #413d4b;
-    font-weight: 600;
-    font-size: x-large;
+  text-transform: uppercase;
+  font-family: var(--font-family-headline);
+  margin: 0;
+  color: #413d4b;
+  font-weight: 600;
+  font-size: x-large;
 }
 
-#stefan .headline p { 
-    margin: .5em 1em;
-} 
+#stefan .headline p {
+  margin: 0.5em 1em;
+}
 
 #stefan .hr {
-    height: 2px;
-    width: 62px;
-    margin: 16px auto;
-    background: var(--border-color-grey);
-    margin-bottom: 3em;
+  height: 2px;
+  width: 62px;
+  margin: 16px auto;
+  background: var(--border-color-grey);
+  margin-bottom: 3em;
 }
 
 #stefan .features {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1000px;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    padding: 1px 0 0 1px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 1px 0 0 1px;
 }
 
 #stefan .features .feature {
-    flex-basis: 33%;
-    padding: 30px 12px 30px 12px;
-    border-right: 1px solid var(--border-color-grey);
-    border-bottom: 1px solid var(--border-color-grey);
-    box-sizing: border-box;
+  flex-basis: 33%;
+  padding: 30px 12px 30px 12px;
+  border-right: 1px solid var(--border-color-grey);
+  border-bottom: 1px solid var(--border-color-grey);
+  box-sizing: border-box;
 }
 
 /* START NO OUTER BORDERS -- > only  inner! Borders   - I am aware this solution is far from ideal ;) */
-#stefan>.wrapper:nth-child(1) .features>.feature:nth-child(3),
-#stefan>.wrapper:nth-child(1) .features>.feature:nth-child(6) {
-    border-right: none;
+#stefan > .wrapper:nth-child(1) .features > .feature:nth-child(3),
+#stefan > .wrapper:nth-child(1) .features > .feature:nth-child(6) {
+  border-right: none;
 }
 
-#stefan>.wrapper:nth-child(1) .features>.feature:nth-child(4),
-#stefan>.wrapper:nth-child(1) .features>.feature:nth-child(5),
-#stefan>.wrapper:nth-child(1) .features>.feature:nth-child(6) {
-    border-bottom: none;
+#stefan > .wrapper:nth-child(1) .features > .feature:nth-child(4),
+#stefan > .wrapper:nth-child(1) .features > .feature:nth-child(5),
+#stefan > .wrapper:nth-child(1) .features > .feature:nth-child(6) {
+  border-bottom: none;
 }
 
 /* END  NO OUTER BORDERS -- > only  inner! Borders    - I am aware this solution is far from ideal ;) */
 
-
 #stefan .features .feature img {
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 #stefan .features .feature h4 {
-    font-size: .91rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0 0 12px;
-    font-family: var(--font-family-roboto);
+  font-size: 0.91rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  font-family: var(--font-family-roboto);
 }
 
 #stefan .features .feature p {
-    color: var(--color-grey);
-    line-height: 1.7;
-    font-size: .9rem;
-    margin: 0 8px;
+  color: var(--color-grey);
+  line-height: 1.7;
+  font-size: 0.9rem;
+  margin: 0 8px;
 }
 
 #stefan .team {
-    background-image: url('images/design-assets/bgk-middle.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: 0% 50%;
+  background-image: url("images/design-assets/bgk-middle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: 0% 50%;
 }
 
 #stefan .team .teammember {
-    margin-right: 20px;
-    border: .01em solid var(--color-grey);
+  margin-right: 20px;
+  border: 0.01em solid var(--color-grey);
 }
-  
+
 #stefan .team .teammember .teammember-details {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 #stefan .team .teammember .teammember-details h3 {
-    line-height: 2rem;
-    margin-bottom: -15px;
+  line-height: 2rem;
+  margin-bottom: -15px;
 }
 
 #stefan .team .teammember .teammember-details p {
-    margin: 17px 0px 35px;
-    font-size: .79rem; 
-    color: var(--color-grey);
+  margin: 17px 0px 35px;
+  font-size: 0.79rem;
+  color: var(--color-grey);
 }
 
-
 #stefan .cta {
-    margin-top: 6rem;
-    padding-bottom: 4em;
+  margin-top: 6rem;
+  padding-bottom: 4em;
 }
 
 #stefan .cta .pleaseApply {
-    margin-bottom: .3rem;
-    font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
 }
 
 #stefan .callToAction {
-    margin: 14px 20px;
-    text-transform: uppercase;
-    display: inline-block;
-    font-size: 1.2rem;
-    cursor: pointer;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    font-weight: 600;
+  margin: 14px 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1.2rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
-#stefan .callToAction .fas { 
-    margin-right: 1em; 
-    animation: fa-spin 2s linear infinite;
+#stefan .callToAction .fas {
+  margin-right: 1em;
+  animation: fa-spin 2s linear infinite;
 }
-  
+
 #stefan .white {
-    color: var(--bg-color-white) !important;
+  color: var(--bg-color-white) !important;
 }
 
 #stefan .hr.white {
-    background: var(--bg-color-white);
+  background: var(--bg-color-white);
 }
-
 
 @media only screen and (max-width: 888px) {
+  #stefan .features,
+  #stefan .team {
+    flex-direction: column;
+  }
 
-    #stefan .features,
-    #stefan .team {
-        flex-direction: column;
-    }
+  #stefan .features {
+    margin-bottom: 4rem;
+    max-width: 62vw;
+  }
 
-    #stefan .features {
-        margin-bottom: 4rem;
-        max-width: 62vw;
-    }
+  #stefan .teammember {
+    margin-bottom: 4rem;
+    max-width: 80vw;
+  }
 
-    #stefan .teammember {
-        margin-bottom: 4rem;
-        max-width: 80vw;
-    }
+  #stefan .features .feature {
+    border: transparent !important;
+  }
 
-    #stefan .features .feature {
-        border: transparent !important;
-    }
+  #stefan .white {
+    padding: 0 1em;
+  }
 
-    #stefan .white {
-        padding: 0 1em;
-    }
+  #stefan {
+    padding: 40rem 0 0 0;
+  }
 
-    #stefan {
-        padding: 40rem 0 0 0;
-    }
-
-    #stefan .headline h3 {
-        margin-top: 2em;
-    }
-
+  #stefan .headline h3 {
+    margin-top: 2em;
+  }
 }
-
 
 /* stefano Section ends here */
 
- 
 /* section 1 */
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .banner {
-    background-image: url(./images/design-assets/bgk-header.png);
-    background-size: 100% auto;
-    background-position: cover;
-    height: 35rem;
-    background-repeat: no-repeat;
+  background-image: url(./images/design-assets/bgk-header.png);
+  background-size: 100% auto;
+  background-position: cover;
+  height: 35rem;
+  background-repeat: no-repeat;
 }
 
 .center-items {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 nav {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2rem;
-    color: white;
-    height: 2rem;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  color: white;
+  height: 2rem;
 }
 
 .logo-name {
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
 }
 
 .logo-name img {
-    margin-right: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .middle-text {
-    width: 70%;
+  width: 70%;
 }
 
 .items-menu {
-    list-style: none;
+  list-style: none;
 }
 
 .items-menu a {
-    color: white;
-    text-decoration: none;
-    margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
 }
 
 .items-menu a:hover {
-    color: rgba(230, 230, 230, 0.3);
-    transition: 0.5;
+  color: rgba(230, 230, 230, 0.3);
+  transition: 0.5;
 }
 
 .banner-text-box {
-    height: 28rem;
-    align-items: center;
-    width: 60%;
-    margin: 0 auto;
-    min-width: 600px;
+  height: 28rem;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  min-width: 600px;
 }
 
 .inner-banner-text-box {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 .inner-banner-text-box h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .inner-banner-text-box p {
-    line-height: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .line {
-    width: 200px;
-    border-top: 2px solid #48DED0;
-    margin: auto;
+  width: 200px;
+  border-top: 2px solid #48ded0;
+  margin: auto;
 }
 
 .button {
-    text-decoration: none;
-    border: 3px solid #48DED0;
-    padding: 0.5rem 1.2rem;
-    border-radius: 2px;
-    color: #48DED0;
+  text-decoration: none;
+  border: 3px solid #48ded0;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2px;
+  color: #48ded0;
 }
 
 .button:hover {
-    border: 3px solid #2D8D84;
-    color: #2D8D84;
-    transition: 0.5;
+  border: 3px solid #2d8d84;
+  color: #2d8d84;
+  transition: 0.5;
 }
 
 .section2 {
-    width: 100%;
-    height: 400px;
+  width: 100%;
+  height: 400px;
 }
 
 .our-story-div {
-    display: flex;
-    justify-content: center;
-    padding: 4rem;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
 }
 
 .text-box-our-story p {
-    line-height: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .text-box-our-story {
-    width: 40%;
-    padding-left: 3rem;
+  width: 40%;
+  padding-left: 3rem;
 }
 
 .middle-section {
-    background-image: url(./images/design-assets/bgk-middle.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    height: 28rem;
-    color: white;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url(./images/design-assets/bgk-middle.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 28rem;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .play-button img {
-    margin: auto;
-    text-align: center;
-    max-width: 100%;
-    height: auto;
-    display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.play-button img:hover {
+  transition: 0.2s;
+  transform: scale(1.05);
 }
 
 .play-button h4 {
-    text-align: center;
+  text-align: center;
 }
- 
-
 
 /* Section 3 */
-
 
 /* grid 2 for section alex */
 
 .row {
-    display: flex;
+  display: flex;
 }
 
 .column {
-    flex: 50%;
+  flex: 50%;
 }
 
 .column img {
-    padding: 15px;
+  padding: 15px;
 }
 
 .column form {
-    text-align: center;
+  text-align: center;
 }
 
 .imgTestimonials,
 .column h4 {
-    text-align: center;
+  text-align: center;
 }
 
-.form { 
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 5%;
-    margin-top: 3%;
+.form {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  margin-top: 3%;
 }
 
 input,
 textarea {
-    width: 80%;
-    padding: 10px;
+  width: 80%;
+  padding: 10px;
 }
 
 .imgTestimonials {
-    display: flex;
+  display: flex;
 }
 
 #alex img {
-    max-width: 100px;
-    height: auto;
+  max-width: 100px;
+  height: auto;
 }
 
 .footerInfo {
-    display: flex;
+  display: flex;
 }
-
 
 /* fraction 1 1 1 */
 
 .grid3 {
-    flex: 30%;
-    width: 100%;
+  flex: 30%;
+  width: 100%;
 }
 
 .footerInfo {
-    background-image: url("images\design-assets\bgk-footer.png");
-    background-size: cover;
-    width: 100%;
-    height: 200px; 
+  background-image: url("images\design-assets\bgk-footer.png");
+  background-size: cover;
+  width: 100%;
+  height: 200px;
 }
-
 
 /* footer */
 
 footer {
-    background-image: url(./images/design-assets/bgk-footer.png);
-    height: 25rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(./images/design-assets/bgk-footer.png);
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .grid-container-3-columns {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 33% 33% 33%;
-    grid-gap: 10px;
-    padding: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+  padding: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-.grid-container-3-columns>div {
-    padding: 20px 0;
-    color: white;
+.grid-container-3-columns > div {
+  padding: 20px 0;
+  color: white;
 }
 
 .grid-container-2-columns {
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
-    padding: 10px;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
 }
 
-.grid-container-2-columns>div {
-    color: white;
-    margin: 0;
+.grid-container-2-columns > div {
+  color: white;
+  margin: 0;
 }
 
 .grid-container-2-columns-phone {
-    display: grid;
-    justify-content: flex-start;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
-    padding: 10px;
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
 }
 
 #newsletter {
-    width: 50%
+  width: 50%;
 }
 
 #paper-pic {
-    background-color: white;
+  background-color: white;
 }
 
 #newsletter-row,
 #socialmedia-row {
-    display: flex;
-    flex-direction: row; 
+  display: flex;
+  flex-direction: row;
 }
