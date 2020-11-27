@@ -130,10 +130,7 @@
     margin-right: 20px;
     border: .01em solid var(--color-grey);
 }
-
-#stefan .team .teammember img {}
-
-
+  
 #stefan .team .teammember .teammember-details {
     text-transform: uppercase;
 }
