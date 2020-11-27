@@ -12,6 +12,8 @@
 
 
 
+
+
 /* stefano Section starts here */
 /*  font-family's are not yet implemented im html-file */
 :root {
@@ -19,10 +21,11 @@
     --color-grey: grey;
     --color-black: #413d4b;
     --border-color-grey: #8080805e;
-    --font-family-text: 'playfair_displayregular';
-    --font-family-headline: 'playfair_displaybold';
-    --font-family-roboto: 'robotoblack';
+    --font-family-text: 'Playfair Display';
+    --font-family-headline: 'Playfair Display';
+    --font-family-roboto: 'Roboto';
 }
+
 
 #stefan {
     width: 100%;
@@ -38,6 +41,7 @@
     max-width: 900px;
     text-align: center;
     margin: 0 auto;
+    font-family: var(--font-family-text);
 }
 
 #stefan .headline {
@@ -51,7 +55,6 @@
     font-family: var(--font-family-headline);
     margin: 0;
     color: #413d4b;
-    font-family: var(--font-family-text);
     font-weight: 600;
     font-size: x-large;
 }
