@@ -462,10 +462,17 @@
      flex-direction: row;
  }
  
- .grid-container-2-columns-info {
+ .grid-container-info-tags {
      display: grid;
      justify-content: space-around;
-     grid-template-columns: auto auto;
+     grid-template-columns: 33% 33% 33%;
      grid-gap: 10px;
      padding: 10px;
+     margin-left: 15%;
+     margin-right: 15%;
+ }
+ 
+ .grid-container-info-tags>div {
+     color: white;
+     margin: 0;
  }
