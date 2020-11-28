@@ -213,6 +213,9 @@
      font-size: 16px;
  }
  
+ body {
+     margin: 0;
+ }
  .banner {
      background-image: url(./images/design-assets/bgk-header.png);
      background-size: 100% auto;
